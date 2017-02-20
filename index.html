@@ -5,8 +5,23 @@
 	<title>Publicaciones de la Diputación de Granada</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<style>
-	
 
+		.image img {
+		    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+		    -moz-transition: all 0.5s ease; /* Firefox */
+		    -ms-transition: all 0.5s ease; /* IE 9 */
+		    -o-transition: all 0.5s ease; /* Opera */
+		    transition: all 0.5s ease;
+		}
+
+		.image:hover img {
+
+		    -webkit-transform:scale(1.25); /* Safari and Chrome */
+		    -moz-transform:scale(1.25); /* Firefox */
+		    -ms-transform:scale(1.25); /* IE 9 */
+		    -o-transform:scale(1.25); /* Opera */
+		     transform:scale(1.25);
+		}
 
 	</style>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -15,19 +30,27 @@
 	<![endif]-->
 </head>
 <body>
-<div class="container">
-	<div class="row align-items-start">
-		<div class="col-12 text-center">
+<div class="container" style="min-height: 100vh;">
+	<div class="row align-items-end" style="min-height: 50vh; padding: 2.5% 0;">
+		<div class="col-12 text-center align-baseline">
 			<img src="img/logo_grises.png" alt="logotipo del área de publicaciones de la Diputación de Granada" width="360" />
 		</div>
-		<div class="col-4 col-sm-12  text-center">
-			<img src="img/cultura.png" alt="Cultura">
+	</div>
+	<div class="row align-items-start" style="min-height: 50vh; padding: 2.5% 0;">
+		<div class="col-12 col-sm-4  text-center align-top">
+			<div class="image">
+				<a href="http://cultura.publicacionesdiputaciongranada.es"><img src="img/cultura.png" alt="Cultura"></a>
+			</div>
 		</div>
-		<div class="col-4 col-sm-12  text-center">
-			<img src="img/desarrollo.png" alt="Desarrollo">
+		<div class="col-12 col-sm-4  text-center align-top">
+			<div class="image">
+				<a href="http://empleo.publicacionesdiputaciongranada.es"><img src="img/desarrollo.png" alt="Desarrollo"></a>
+			</div>
 		</div>
-		<div class="col-4 col-sm-12  text-center">
-			<img src="img/fomento.png" alt="Fomento">
+		<div class="col-12 col-sm-4	  text-center align-top">
+			<div class="image">
+				<a href="http://obraspublicas.publicacionesdiputaciongranada.es"><img src="img/fomento.png" alt="Fomento"></a>
+			</div>
 		</div>
 	</div>
 </div>
