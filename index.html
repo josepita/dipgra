@@ -32,7 +32,24 @@
 		  }
 
 		.row {  margin-bottom: 0.5rem; margin-top: 0.5rem; }
+		.vertical-20 {
+			min-height: 20vh; padding:  0;
+		}
+		.vertical-40 {
+			min-height: 40vh; padding: 2.5% 0;
+		}
+		@media (max-width: 768px) {
 
+			.vertical-20 {
+				min-height: auto;
+				margin: 2.5rem auto;
+			}
+			.vertical-40 {
+				min-height: auto;
+			}
+			.image { margin: 0.5rem auto; }
+
+		}
 	</style>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<!--[if lt IE 9]>
@@ -41,16 +58,16 @@
 </head>
 <body>
 <div class="container" style="min-height: 100vh;">
-	<div class="row align-items-end" style="min-height: 20vh; padding: 2.5% 0;">
+	<div class="row align-items-md-end vertical-20">
 		<div class="col-12 text-center align-baseline logog"><img src="img/logo-diputacion-grande.jpg" alt="Logotipo de la Diputación de Granada" /></div>
 
 	</div>
-	<div class="row align-items-center" style="min-height: 40vh; padding: 2.5% 0;">
+	<div class="row align-items-md-center vertical-40">
 		<div class="col-12 text-center align-bottom logopub">
 			<img src="img/logo_grises.png" alt="logotipo del área de publicaciones de la Diputación de Granada" />
 		</div>
 	</div>
-	<div class="row align-items-start" style="min-height: 40vh; padding: 2.5% 0;">
+	<div class="row align-items-md-start vertical-40">
 		<div class="col-12 col-md-4  text-center align-top">
 			<div class="image">
 				<a href="http://cultura.publicacionesdiputaciongranada.es"><img src="img/cultura.png" alt="Cultura"></a>
